@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "483724107113",
+    "firebase_url": "https://social-media-integration-spark.firebaseio.com",
+    "project_id": "social-media-integration-spark",
+    "storage_bucket": "social-media-integration-spark.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483724107113:android:3e95dadecd730de60df1f8",
+        "android_client_info": {
+          "package_name": "com.example.social_media_integration_spark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483724107113-uovdon0ovedte45kcosf9qckn4q4elln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDusawlTyAm4i6VqMVe1gLqG5ARzNRLYy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483724107113-uovdon0ovedte45kcosf9qckn4q4elln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
