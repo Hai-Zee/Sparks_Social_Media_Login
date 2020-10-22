@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">Social_Media_Integration_Spark</string>
+    <string name="app_name">Social_Media_Integration</string>
     <string name="title_activity_maps">Map</string>
     <string name="facebook_app_id">674835623408565</string>
     <string name="fb_login_protocol_scheme">fb674835623408565</string>
+    <string name="signout">SignOut</string>
 
 </resources>

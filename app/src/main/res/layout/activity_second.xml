@@ -6,32 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/my_menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pacifico"
+            android:text="My Sparks Project"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_second"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+
     <TextView
         android:id="@+id/nameTextViewID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:textSize="28dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageViewID"
         app:layout_constraintStart_toStartOf="@+id/imageViewID"
         app:layout_constraintTop_toBottomOf="@+id/imageViewID" />
 
     <TextView
         android:id="@+id/emailTextViewID"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="23sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="@+id/nameTextViewID"
         app:layout_constraintStart_toStartOf="@+id/nameTextViewID"
         app:layout_constraintTop_toBottomOf="@+id/nameTextViewID" />
 
     <ImageView
         android:id="@+id/imageViewID"
-        android:layout_width="231dp"
-        android:layout_height="249dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="289dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar"
+        app:srcCompat="@drawable/ic_android_black_24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signOutButtonID"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="SignOut"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewID"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewID" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
