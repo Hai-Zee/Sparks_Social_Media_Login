@@ -8,6 +8,7 @@ public class Data_Module {
         this.userName = userName;
         this.imageURI = imageURI;
     }
+//    adding default constructor
     Data_Module(){
 
     }
